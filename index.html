@@ -1,0 +1,151 @@
+<html>
+<head>
+
+ <style>
+    html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.row {
+  display: table-row;
+  height: 400px;
+
+}
+
+.top {
+  background-color: hwb(201 9% 0% / 0.812);
+  
+
+}
+
+.bottom{
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+}
+.ralign {
+text-align:right;
+  padding-right:5%;
+}
+
+
+ input[type="text"] {
+   width:3%;
+             display: block;
+             margin : 0 auto;
+            
+        }
+
+
+body {
+    font-family: sans-serif;
+    background-color: #111d4a;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#productlist {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+   
+   
+}
+
+.product {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    border:3px #000;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-right:20px;
+   
+    grid-template-areas:
+        'name image'
+        'x image';
+    text-align: left;
+}
+
+.product > h2 {
+   font-size:20px;
+    margin-bottom: 0px;
+}
+
+.product > p {
+    
+    margin: 0;
+    margin-top: 18px;
+    font-size:15px;
+}
+
+.product > img {
+    height: 150px;
+    width:150px;
+    grid-area: image;
+    align-self:right;
+    margin-left:50px;
+}
+
+#searchBar {
+    width: 50%;
+    height: 40px;
+    border-radius: 3px;
+    border: 2px solid #000000;
+align-self:center;
+margin-top:100px;
+margin-bottom:50px;
+    font-size: 20px;
+}
+
+
+a {
+
+margin-right:10px;
+color:white;
+}
+
+
+
+  </style>
+</head>  
+
+<body>
+<div class="row top">
+ <p class='ralign'><br>
+   <a href='aboutme.html'>About Me</a>
+   <br>
+  </p>
+  <div class='calign'>
+    
+     <input type=text name="searchbar" id="searchbar" placeholder="  Search Product"></input>
+  
+  </div>
+</div>
+
+<div class="row bottom"><br><p style="padding-left:3%">  Product Listings</p>
+      <ul id="productlist"></ul>
+</div>
+</body> <script src="search.js"></script></html>
